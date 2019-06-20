@@ -3,6 +3,6 @@
     "@babel/preset-env" //转换 ES2015+
   ],
   "plugins": [
-    "react-hot-loader/babe" //热更新 react 组件
+    "react-hot-loader/babel" //热更新 react 组件
   ]
 }
