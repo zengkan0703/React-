@@ -1,8 +1,10 @@
 {
   "presets": [
-    "@babel/preset-env" //转换 ES2015+
+    "@babel/preset-env", //转换 ES2015+
+    "@babel/preset-react", //babel 官方 react 插件集
   ],
   "plugins": [
-    "react-hot-loader/babel" //热更新 react 组件
+    "@babel/plugin-transform-runtime", //
+    "react-hot-loader/babel", //热更新 react 组件
   ]
 }
