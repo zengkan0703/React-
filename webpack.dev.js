@@ -5,7 +5,7 @@ const webpack = require('webpack');
 
 module.exports = merge(common, {
   mode: 'development',
-  devtool: 'eval',
+  devtool: 'eval-source-map',
   output: {
     filename: 'index.[hash].js',
   },
@@ -13,14 +13,11 @@ module.exports = merge(common, {
     contentBase: path.resolve(__dirname, './dist'),
     compress: true, //gzip 压缩
     host: "0.0.0.0",
-    hot: true,
     open: true,
-    hotOnly: true,
     progress: true,
-    port: 3721,
+    port: 37321,
   },
   plugins: [
-    new webpack.HotModuleReplacementPlugin(),
     new webpack.DefinePlugin({
       'process.env.NODE_ENV': JSON.stringify('development'),
     })
