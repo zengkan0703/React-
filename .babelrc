@@ -5,6 +5,7 @@
   ],
   "plugins": [
     "@babel/plugin-transform-runtime", //
-    "react-hot-loader/babel", //热更新 react 组件
+    ["@babel/plugin-proposal-decorators", { "legacy": true }], //装饰器支持
+    "@babel/plugin-proposal-class-properties"
   ]
 }
